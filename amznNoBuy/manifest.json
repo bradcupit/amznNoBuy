@@ -1,0 +1,13 @@
+{
+  "name": "amznNoBuy",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Hides amazon video 'buy' button so your kids don't spend a bunch of money.",
+  "content_scripts": [{
+    "matches": [
+      "*://amazon.com/*",
+      "*://*.amazon.com/*"
+    ],
+    "js": [ "contentScript.js" ]
+  }]
+}
